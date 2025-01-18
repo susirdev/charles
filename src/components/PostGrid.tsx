@@ -38,12 +38,12 @@ const PostGrid: React.FC<PostGridProps> = ({ posts }) => {
               <div className="flex flex-wrap gap-2 mb-2">
                 {Array.isArray(post.tags) ? (
                   post.tags.map((tag) => (
-                    <span key={tag} className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded-full text-sm">
+                    <span key={tag} className="bg-blue-100 dark:bg-blue-900 text-gray-800 dark:text-gray-200 px-2 py-1 rounded-full text-sm">
                       {tag}
                     </span>
                   ))
                 ) : (
-                  <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded-full text-sm">
+                  <span className="bg-blue-100 dark:bg-blue-900 text-gray-800 dark:text-gray-200 px-2 py-1 rounded-full text-sm">
                     {post.tags}
                   </span>
                 )}
