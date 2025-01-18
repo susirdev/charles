@@ -58,7 +58,7 @@ body {
 }
 
 .prose a {
-  @apply text-blue-600 dark:text-blue-400 hover:underline;
+  @apply text-gray-600 dark:text-gray-400 hover:underline;
 }
 
 .prose blockquote {
@@ -92,7 +92,7 @@ body {
   }
 
   .prose a:hover {
-    @apply text-blue-300;
+    @apply text-gray-300;
   }
 }
 

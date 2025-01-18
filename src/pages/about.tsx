@@ -259,7 +259,7 @@ export default function AboutPage({ socialStats }: AboutPageProps) {
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold text-gray-900 dark:text-white flex items-center gap-2">
             <span>{t('leaveMessage')}</span>
-            <span className="text-blue-500 dark:text-blue-400">💬</span>
+            <span className="text-gray-500 dark:text-gray-400">💬</span>
           </h2>
           <MessageBoard />
         </div>
