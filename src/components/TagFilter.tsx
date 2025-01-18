@@ -38,7 +38,7 @@ const TagFilter: React.FC<TagFilterProps> = ({ tags, activeTag, onFilterChange, 
         <div className="relative md:hidden" ref={dropdownRef}>
           <button 
             onClick={() => setIsOpen(!isOpen)}
-            className="px-4 py-2 bg-blue-500 text-white rounded-full text-sm font-medium transition-colors duration-200 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            className="px-4 py-2 bg-gray-500 text-white rounded-full text-sm font-medium transition-colors duration-200 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
           >
             {activeTag} {isOpen ? '▲' : '▼'}
           </button>
@@ -50,7 +50,7 @@ const TagFilter: React.FC<TagFilterProps> = ({ tags, activeTag, onFilterChange, 
                     key={tag}
                     className={`block w-full px-4 py-2 text-sm text-left transition-colors duration-150 ${
                       activeTag === tag 
-                        ? 'bg-blue-500 text-white' 
+                        ? 'bg-gray-500 text-white' 
                         : 'text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700'
                     }`}
                     onClick={() => handleTagClick(tag)}
@@ -70,7 +70,7 @@ const TagFilter: React.FC<TagFilterProps> = ({ tags, activeTag, onFilterChange, 
               key={tag}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
                 activeTag === tag 
-                  ? 'bg-blue-500 text-white' 
+                  ? 'bg-gray-500 text-white' 
                   : 'bg-gray-200 text-gray-700 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600'
               }`}
               onClick={() => onFilterChange(tag)}
