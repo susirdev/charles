@@ -24,7 +24,7 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
           className={`p-2 rounded-full transition-all duration-200 ${
             currentPage === 1
               ? 'text-gray-400 dark:text-gray-600 cursor-not-allowed'
-              : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-blue-500 dark:hover:text-blue-400'
+              : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-500 dark:hover:text-gray-400'
           }`}
           aria-label="Previous page"
         >
@@ -40,7 +40,7 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
             className={`min-w-[2.5rem] h-10 rounded-full text-sm font-medium transition-all duration-200 ${
               page === currentPage
                 ? 'bg-blue-500 text-white shadow-md'
-                : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-blue-500 dark:hover:text-blue-400'
+                : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-500 dark:hover:text-gray-400'
             }`}
             aria-label={`Page ${page}`}
             aria-current={page === currentPage ? 'page' : undefined}
@@ -55,7 +55,7 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
           className={`p-2 rounded-full transition-all duration-200 ${
             currentPage === totalPages
               ? 'text-gray-400 dark:text-gray-600 cursor-not-allowed'
-              : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-blue-500 dark:hover:text-blue-400'
+              : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-500 dark:hover:text-gray-400'
           }`}
           aria-label="Next page"
         >
