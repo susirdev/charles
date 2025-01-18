@@ -55,7 +55,7 @@ const Header: React.FC = () => {
     <header className={`fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-11/12 max-w-5xl transition-all duration-300 ${isScrolled ? 'top-2' : 'top-4'}`}>
       <div className="bg-white dark:bg-gray-800 shadow-lg rounded-full px-4 md:px-6 py-2 md:py-3 flex justify-between items-center transition-colors duration-200">
         <Link href="/" className="flex items-center">
-          <span className="font-bold text-base md:text-lg text-gray-900 dark:text-white hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-200">
+          <span className="font-bold text-base md:text-lg text-gray-900 dark:text-white hover:text-gray-500 dark:hover:text-gray-400 transition-colors duration-200">
             {t('blogTitle')}
           </span>
         </Link>
@@ -100,7 +100,7 @@ const Header: React.FC = () => {
               <button
                 onClick={() => handleLanguageChange('zh')}
                 className={`block w-full text-left px-4 py-2 text-sm ${
-                  locale === 'zh' ? 'text-blue-500' : 'text-gray-700 dark:text-gray-200'
+                  locale === 'zh' ? 'text-gray-500' : 'text-gray-700 dark:text-gray-200'
                 } hover:bg-gray-100 dark:hover:bg-gray-700`}
               >
                 中文
@@ -108,7 +108,7 @@ const Header: React.FC = () => {
               <button
                 onClick={() => handleLanguageChange('en')}
                 className={`block w-full text-left px-4 py-2 text-sm ${
-                  locale === 'en' ? 'text-blue-500' : 'text-gray-700 dark:text-gray-200'
+                  locale === 'en' ? 'text-gray-500' : 'text-gray-700 dark:text-gray-200'
                 } hover:bg-gray-100 dark:hover:bg-gray-700`}
               >
                 English
@@ -120,14 +120,14 @@ const Header: React.FC = () => {
         {/* 桌面端导航 */}
         <nav className="hidden md:block">
           <ul className="flex space-x-4 items-center">
-            <li><Link href="/" className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-200">{t('home')}</Link></li>
-            <li><Link href="/about" className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-200">{t('about')}</Link></li>
-            <li><Link href="/friends" className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-200">{t('friends')}</Link></li>
+            <li><Link href="/" className="hover:text-gray-500 dark:hover:text-gray-400 transition-colors duration-200">{t('home')}</Link></li>
+            <li><Link href="/about" className="hover:text-gray-500 dark:hover:text-gray-400 transition-colors duration-200">{t('about')}</Link></li>
+            <li><Link href="/friends" className="hover:text-gray-500 dark:hover:text-gray-400 transition-colors duration-200">{t('friends')}</Link></li>
             <li>
               <div className="relative" ref={languageMenuRef}>
                 <button
                   onClick={() => setIsLanguageMenuOpen(!isLanguageMenuOpen)}
-                  className="bg-gray-100 dark:bg-gray-700 rounded-full px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 transition-all duration-200"
+                  className="bg-gray-100 dark:bg-gray-700 rounded-full px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-gray-500 dark:focus:ring-gray-400 transition-all duration-200"
                 >
                   {locale === 'zh' ? '中文' : 'English'}
                 </button>
@@ -136,7 +136,7 @@ const Header: React.FC = () => {
                     <button
                       onClick={() => handleLanguageChange('zh')}
                       className={`block w-full text-left px-4 py-2 text-sm ${
-                        locale === 'zh' ? 'text-blue-500' : 'text-gray-700 dark:text-gray-300'
+                        locale === 'zh' ? 'text-gray-500' : 'text-gray-700 dark:text-gray-300'
                       } hover:bg-gray-100 dark:hover:bg-gray-700`}
                     >
                       中文
@@ -144,7 +144,7 @@ const Header: React.FC = () => {
                     <button
                       onClick={() => handleLanguageChange('en')}
                       className={`block w-full text-left px-4 py-2 text-sm ${
-                        locale === 'en' ? 'text-blue-500' : 'text-gray-700 dark:text-gray-300'
+                        locale === 'en' ? 'text-gray-500' : 'text-gray-700 dark:text-gray-300'
                       } hover:bg-gray-100 dark:hover:bg-gray-700`}
                     >
                       English

@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="flex items-center space-x-4">
           <Link href="https://github.com/Gloridust/ethanblog" 
-                className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-200"
+                className="text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition-colors duration-200"
                 target="_blank"
                 rel="noopener noreferrer">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
